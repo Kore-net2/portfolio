@@ -1,10 +1,67 @@
-<nav>
-    <div class="nav-content">
-        <a href="/portfolio/index.html" class="nav-logo">Nurali Galiyev</a>
-        <div class="nav-links">
-            <a href="/portfolio/index.html" class="active">Home</a>
-            <a href="/portfolio/resume/index.html">Resume</a>
-            <a href="/portfolio/projects/index.html">Projects</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Nurali Galiyev — Portfolio">
+    <meta property="og:description" content="Portfolio and projects of Nurali Galiyev - Network Security, Systems Administration, and Cloud Infrastructure.">
+    <meta property="og:url" content="https://Kore-net2.github.io/portfolio/index.html">
+    <meta property="og:type" content="website">
+    <title>Nurali Galiyev</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading</div>
         </div>
     </div>
-</nav>
+
+    <div class="scroll-progress"></div>
+
+    <nav>
+        <div class="nav-content">
+            <a href="/portfolio/index.html" class="nav-logo">Nurali Galiyev</a>
+            <div class="nav-links">
+                <a href="/portfolio/index.html" class="active">Home</a>
+                <a href="/portfolio/resume/index.html">Resume</a>
+                <a href="/portfolio/projects/index.html">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home-wrap">
+        <div class="hero-section">
+            <h1 class="hero-title">Nurali Galiyev</h1>
+            <p class="hero-subtitle">Network Security, Systems Administration & Cloud Infrastructure</p>
+            <p class="hero-desc">Fourth-year Computer Science undergraduate at Heriot-Watt University, focusing on enterprise network architectures, Linux administration, and secure cloud environments.</p>
+            
+            <div class="hero-actions">
+                <a href="/portfolio/projects/index.html" class="btn-primary">View Projects</a>
+                <a href="/portfolio/resume/index.html" class="btn-secondary">Check Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nurali Galiyev</p>
+    </footer>
+
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+</body>
+</html>
