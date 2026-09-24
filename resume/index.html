@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Resume | Your Name">
+    <meta property="og:description" content="Your one-line description here.">
+    <meta property="og:url" content="https://yourusername.github.io/resume">
+    <meta property="og:type" content="website">
+    <title>Resume | Your Name</title>
+
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/resume.css">
+    <link rel="stylesheet" href="../assets/css/resume-print.css" media="print">
+</head>
+<body>
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading</div>
+        </div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <nav>
+        <div class="nav-content">
+            <a href="/" class="nav-logo">Your Name</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/resume" class="active">Resume</a>
+                <a href="/projects">Projects</a>
+                <a href="/notes">Notes</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="resume-wrap">
+
+        <div class="rp-header">
+            <h1>Your Name</h1>
+            <div class="rp-header-meta">Your City, State</div>
+        </div>
+
+        <div class="rp-body">
+
+            <!-- Left column -->
+            <div class="rp-left">
+
+                <div class="rp-section-left">
+                    <div class="rp-label">Education</div>
+                    <div class="edu-name">Your University</div>
+                    <div class="edu-sub">B.A. in Your Major</div>
+                    <div class="edu-date">2023 – 2027</div>
+                    <div class="edu-date" style="color: var(--gray); margin-top: 1px;">Your City, State</div>
+                    <div class="edu-coursework">Course One · Course Two · Course Three · Course Four · Course Five</div>
+                </div>
+
+                <div class="rp-section-left">
+                    <div class="rp-label">Skills</div>
+                    <div class="skill-group">
+                        <div class="skill-name">Programming</div>
+                        <div class="skill-items">Python, Java, JavaScript, SQL</div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-name">Tools</div>
+                        <div class="skill-items">Git, Excel, Tableau, LaTeX</div>
+                    </div>
+                    <div class="skill-group">
+                        <div class="skill-name">Other</div>
+                        <div class="skill-items">Add your own categories here</div>
+                    </div>
+                </div>
+
+                <div class="rp-section-left">
+                    <div class="rp-label">Languages</div>
+                    <div class="lang-row"><span class="lang-name">English</span><span>Native</span></div>
+                    <div class="lang-row"><span class="lang-name">Spanish</span><span>Proficient</span></div>
+                </div>
+
+                <div class="rp-section-left">
+                    <div class="rp-label">Activities</div>
+                    <div class="activity-row">
+                        <div class="activity-title">Club or Team Name</div>
+                        <div class="activity-date">2023 – Present</div>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-title">Another Activity</div>
+                        <div class="activity-date">2024 – Present</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right column -->
+            <div class="rp-right">
+
+                <div class="rp-section-right">
+                    <div class="rp-label-right">Experience</div>
+
+                    <div class="exp-entry">
+                        <div class="exp-header">
+                            <span class="exp-org">Company Name</span>
+                            <span class="exp-date">Jun 2025 – Present</span>
+                        </div>
+                        <div class="exp-role">Your Job Title</div>
+                        <div class="exp-loc">City, State</div>
+                        <div class="exp-desc">Describe what you did in this role. Focus on impact and what you built, learned, or contributed. Keep it to two or three sentences.</div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-header">
+                            <span class="exp-org">Another Company</span>
+                            <span class="exp-date">Jun – Aug 2024</span>
+                        </div>
+                        <div class="exp-role">Intern</div>
+                        <div class="exp-loc">City, State</div>
+                        <div class="exp-desc">Another description of your work. What did you accomplish? What tools or skills did you use?</div>
+                    </div>
+
+                    <div class="exp-entry">
+                        <div class="exp-header">
+                            <span class="exp-org">Part-time Job</span>
+                            <span class="exp-date">Jun – Sep 2023</span>
+                        </div>
+                        <div class="exp-role">Job Title</div>
+                        <div class="exp-loc">City, State</div>
+                        <div class="exp-desc">Even part-time and service jobs are worth including early in your career. Focus on what you learned or demonstrated.</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="download-section">
+            <a href="../assets/documents/Your_Resume.pdf" class="download-btn" download>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download PDF
+            </a>
+            <p class="resume-updated">Updated Month Year</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Your Name</p>
+        </footer>
+
+    </div>
+
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/dark-mode.js"></script>
+</body>
+</html>

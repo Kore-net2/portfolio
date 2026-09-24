@@ -1,0 +1,445 @@
+/* ============================================
+   RESUME — EDITORIAL TWO-COLUMN LAYOUT
+   ============================================ */
+
+body {
+    padding-top: 70px;
+}
+
+/* White background only on the content areas */
+.rp-header,
+.rp-left,
+.rp-right {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.rp-header {
+    padding: 1.5rem 1.75rem 1.25rem;
+    border-bottom: 1.5px solid var(--wine);
+    margin-bottom: 1.5rem;
+    border-radius: 8px 8px 0 0;
+}
+
+body.dark-mode .rp-header,
+body.dark-mode .rp-left,
+body.dark-mode .rp-right {
+    background: #231f1c;
+}
+
+/* ---- Wrap ---- */
+
+.resume-wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 4rem 2rem 5rem;
+}
+
+/* ---- Header ---- */
+
+.rp-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--wine);
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+.rp-header-meta {
+    margin-top: 0.4rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--gray);
+    font-style: italic;
+    letter-spacing: 0.2px;
+}
+
+/* ---- Two-column body ---- */
+
+.rp-body {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.rp-left {
+    padding: 1.5rem;
+    border-right: none;
+    position: sticky;
+    top: 90px;
+}
+
+.rp-right {
+    padding: 1.5rem;
+}
+
+/* ---- Section labels ---- */
+
+.rp-label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--wine);
+    margin-bottom: 0.75rem;
+}
+
+.rp-label-right {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--wine);
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 0.5px solid var(--light-gray);
+}
+
+/* ---- Left column ---- */
+
+.rp-section-left {
+    margin-bottom: 2rem;
+}
+
+.edu-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--charcoal);
+    line-height: 1.3;
+}
+
+.edu-sub {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8rem;
+    color: var(--gray);
+    margin-top: 2px;
+}
+
+.edu-date {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.75rem;
+    color: var(--wine-light);
+    margin-top: 4px;
+}
+
+.edu-coursework {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.73rem;
+    color: var(--gray);
+    margin-top: 7px;
+    line-height: 1.65;
+}
+
+.edu-coursework a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(125, 30, 62, 0.3);
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.edu-coursework a:hover {
+    color: var(--wine);
+    border-bottom-color: var(--wine);
+}
+
+.skill-group {
+    margin-bottom: 0.7rem;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-name {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 2px;
+}
+
+.skill-items {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.73rem;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.lang-row {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 0.5px solid var(--light-gray);
+}
+
+.lang-row:last-child {
+    border-bottom: none;
+}
+
+.lang-name {
+    color: var(--charcoal);
+    font-weight: 500;
+}
+
+.activity-row {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.78rem;
+    padding: 5px 0;
+    border-bottom: 0.5px solid var(--light-gray);
+}
+
+.activity-row:last-child {
+    border-bottom: none;
+}
+
+.activity-title {
+    font-weight: 500;
+    color: var(--charcoal);
+}
+
+.activity-date {
+    font-size: 0.71rem;
+    color: var(--gray);
+    margin-top: 1px;
+}
+
+/* ---- Right column ---- */
+
+.rp-section-right {
+    margin-bottom: 2.25rem;
+}
+
+.exp-entry {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--light-gray);
+}
+
+.exp-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+
+.exp-org {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--wine);
+    line-height: 1.2;
+}
+
+.exp-date {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.75rem;
+    color: var(--gray);
+    white-space: nowrap;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+.exp-role {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 3px;
+}
+
+.exp-loc {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.73rem;
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+
+.exp-desc {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.83rem;
+    color: var(--charcoal);
+    line-height: 1.7;
+}
+
+.exp-sub {
+    margin-top: 0.85rem;
+    padding-top: 0.85rem;
+    border-top: 0.5px dashed var(--light-gray);
+}
+
+.sub-role {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.sub-date {
+    font-weight: 400;
+    color: var(--gray);
+    font-size: 0.73rem;
+    flex-shrink: 0;
+    margin-left: 0.75rem;
+}
+
+.sub-desc {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.81rem;
+    color: var(--charcoal);
+    line-height: 1.68;
+}
+
+/* ---- Download ---- */
+
+.download-section {
+    text-align: center;
+    padding: 2rem 0 0;
+    margin-top: 1rem;
+    border-top: 1px solid var(--light-gray);
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: var(--wine);
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.download-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--wine);
+    transition: width 0.25s ease;
+}
+
+.download-btn:hover {
+    color: var(--wine-dark);
+    transform: none;
+    box-shadow: none;
+}
+
+.download-btn:hover::after {
+    width: 100%;
+}
+
+.download-btn svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+    transition: transform 0.25s ease;
+}
+
+.download-btn:hover svg {
+    transform: translateY(2px);
+}
+
+.resume-updated {
+    font-size: 0.75rem;
+    color: var(--gray);
+    opacity: 0.6;
+    margin-top: 0.5rem;
+}
+
+/* ---- Dark mode ---- */
+
+body.dark-mode .exp-entry,
+body.dark-mode .activity-row,
+body.dark-mode .lang-row,
+body.dark-mode .download-section {
+    border-color: var(--light-gray);
+}
+
+body.dark-mode .rp-label-right {
+    border-bottom-color: var(--light-gray);
+}
+
+body.dark-mode .exp-sub {
+    border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .download-btn {
+    color: var(--wine-light);
+}
+
+body.dark-mode .download-btn::after {
+    background: var(--wine-light);
+}
+
+body.dark-mode .download-btn svg {
+    stroke: var(--wine-light);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
+    .resume-wrap {
+        padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .rp-header h1 { font-size: 2.3rem; }
+
+    .rp-body {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .rp-left {
+        position: static;
+    }
+
+    .rp-right { padding-left: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+    .rp-header h1 { font-size: 1.9rem; }
+
+    .exp-header {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .exp-date { margin-left: 0; }
+
+    .sub-role {
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .sub-date { margin-left: 0; }
+}

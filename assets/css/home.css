@@ -1,0 +1,457 @@
+/* ============================================
+   HOME PAGE STYLES
+   ============================================ */
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0 4rem;
+    animation: fadeIn 1s ease-out;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(125, 30, 62, 0.04), transparent 60%);
+    pointer-events: none;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-left h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--wine);
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: var(--gray);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.summary {
+    font-size: 1.05rem;
+    color: var(--charcoal);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* Quote Section — elegant below-the-fold element */
+.quote-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 2rem 2rem 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quote-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.quote-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    min-height: 60px;
+    display: flex !important;
+    align-items: center;
+    visibility: visible !important;
+    text-align: center;
+}
+
+/* Decorative line below quote only */
+.quote-container::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 60px;
+    height: 1px;
+    background: var(--wine);
+    opacity: 0.3;
+}
+
+.quote-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.quote-item {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.8s ease-in-out;
+    pointer-events: none;
+}
+
+.quote-item.active {
+    opacity: 1;
+    position: relative;
+    pointer-events: auto;
+}
+
+.quote-mark-open {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    color: var(--wine);
+    opacity: 0.15;
+    line-height: 1;
+    text-align: center;
+    display: block;
+    position: static;
+    margin-bottom: -1rem;
+}
+
+.quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--charcoal);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    padding: 0;
+    text-align: center;
+}
+
+.quote-author {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.82rem;
+    color: var(--wine);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.quote-author::before {
+    content: '— ';
+}
+
+/* Contact Links */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin-top: 2.25rem;
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--light-gray);
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: var(--wine);
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.contact-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--wine);
+    transition: width 0.25s ease;
+}
+
+.contact-links a:hover {
+    color: var(--wine-dark);
+    background: none;
+    box-shadow: none;
+    transform: none;
+}
+
+.contact-links a:hover::after {
+    width: 100%;
+}
+
+.contact-links a:active {
+    transform: none;
+}
+
+.contact-links svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.contact-links svg.chess-icon {
+    fill: none;
+    stroke: currentColor;
+}
+
+.duolingo-icon {
+    filter: none;
+}
+
+body.dark-mode .contact-links a {
+    color: var(--wine-light);
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .contact-links a:hover {
+    color: var(--wine-light);
+    background: none !important;
+}
+
+body.dark-mode .contact-links {
+    border-top-color: var(--light-gray);
+}
+
+/* Profile Photo */
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1.5px solid rgba(125, 30, 62, 0.2);
+    transition: border-color 0.3s ease;
+    filter: contrast(1.02) saturate(1.05);
+}
+
+.profile-photo:hover {
+    border-color: rgba(125, 30, 62, 0.4);
+    filter: contrast(1.03) saturate(1.08);
+}
+
+/* Scroll Down Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1.5s forwards;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroll-indicator:hover {
+    transform: translateX(-50%) translateY(3px);
+}
+
+.scroll-indicator span {
+    font-size: 0.85rem;
+    color: var(--gray);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.scroll-indicator svg {
+    width: 24px;
+    height: 24px;
+    color: var(--wine);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Content Section */
+.content-section {
+    padding: 2rem 0;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 968px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Photo always first on mobile */
+    .hero-right {
+        order: -1;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-left {
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 2.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .profile-photo {
+        max-width: 350px;
+    }
+
+    .contact-links {
+        justify-content: center;
+        gap: 0.5rem 1.25rem;
+    }
+
+    .quote-section {
+        padding: 2.5rem 1.5rem 1rem;
+    }
+
+    .quote-container {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .quote-text {
+        font-size: 1.1rem;
+    }
+
+    .quote-author {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 8rem 0 4rem;
+        min-height: auto;
+    }
+
+    .hero-left h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .summary {
+        font-size: 1rem;
+    }
+
+    .contact-links {
+        flex-direction: row;
+        gap: 0.5rem 1rem;
+        align-items: center;
+    }
+
+    .profile-photo {
+        max-width: 300px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .quote-section {
+        padding: 1.5rem 1rem 1rem;
+        margin-top: 0;
+    }
+
+    .quote-container {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .quote-text {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 7rem 0 3.5rem;
+    }
+
+    .hero-left h1 {
+        font-size: 1.9rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .profile-photo {
+        max-width: 260px;
+    }
+
+    .quote-section {
+        padding: 1rem 1rem 0.5rem;
+        margin-top: 0;
+    }
+
+    .quote-container {
+        padding: 1.25rem 1rem;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+    }
+
+    .quote-mark-open {
+        font-size: 3rem;
+    }
+
+    .quote-author {
+        font-size: 0.78rem;
+    }
+}

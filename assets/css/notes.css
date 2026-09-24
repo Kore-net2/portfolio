@@ -1,0 +1,235 @@
+/* ============================================
+   NOTES PAGE
+   ============================================ */
+
+.notes-wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 4rem 2rem 5rem;
+}
+
+/* ---- Page header ---- */
+
+.notes-header {
+    background: white;
+    border-radius: 8px 8px 0 0;
+    padding: 1.5rem 1.75rem 1.25rem;
+    border-bottom: 1.5px solid var(--wine);
+    margin-bottom: 1.5rem;
+}
+
+.notes-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--wine);
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+body.dark-mode .notes-header {
+    background: #231f1c;
+}
+
+/* ---- Grid ---- */
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* ---- Card — sticky note style ---- */
+
+.note-card {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.75rem 1.75rem 1.5rem;
+    background: white;
+    border: 1px solid rgba(125, 30, 62, 0.06);
+    border-left: 3px solid rgba(125, 30, 62, 0.2);
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-left-color 0.3s ease;
+}
+
+.note-card:hover {
+    border-left-color: var(--wine);
+    box-shadow: 0 6px 24px rgba(125, 30, 62, 0.08);
+    transform: translateY(-3px);
+}
+
+.note-card:active {
+    transform: translateY(0);
+}
+
+body.dark-mode .note-card {
+    background: #231f1c;
+    border-color: rgba(196, 61, 92, 0.08);
+    border-left-color: rgba(196, 61, 92, 0.25);
+}
+
+body.dark-mode .note-card:hover {
+    border-left-color: var(--wine);
+    box-shadow: 0 6px 24px rgba(196, 61, 92, 0.1);
+}
+
+/* ---- Featured card ---- */
+
+.note-card.featured {
+    grid-column: span 2;
+    aspect-ratio: 2 / 1;
+}
+
+.note-card.featured .note-title {
+    font-size: 1.85rem;
+}
+
+.note-card.featured .note-preview {
+    -webkit-line-clamp: 4;
+}
+
+.note-card.featured .note-number {
+    font-size: 6rem;
+    bottom: 1rem;
+    right: 2rem;
+}
+
+/* ---- Card content ---- */
+
+.note-top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.note-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note-tag {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--wine-light);
+    letter-spacing: 0.2px;
+}
+
+.note-date {
+    font-size: 0.78rem;
+    color: var(--gray);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.note-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--wine);
+    line-height: 1.25;
+    letter-spacing: -0.3px;
+    transition: color 0.2s ease;
+}
+
+.note-card:hover .note-title {
+    color: var(--wine-dark);
+}
+
+.note-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.note-preview {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.85rem;
+    color: var(--gray);
+    line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.note-read {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--wine);
+    transition: transform 0.25s ease;
+    display: inline-block;
+    letter-spacing: 0.3px;
+}
+
+.note-card:hover .note-read {
+    transform: translateX(5px);
+}
+
+/* ---- Number accent ---- */
+
+.note-number {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--wine);
+    opacity: 0.05;
+    line-height: 1;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.note-card:hover .note-number {
+    opacity: 0.1;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 900px) {
+    .notes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .note-card.featured {
+        grid-column: span 2;
+        aspect-ratio: 2 / 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .notes-wrap {
+        padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .notes-header h1 { font-size: 2.3rem; }
+
+    .notes-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .note-card,
+    .note-card.featured {
+        aspect-ratio: auto;
+        grid-column: span 1;
+        padding: 1.25rem 1.25rem 1rem;
+    }
+
+    .note-card.featured .note-title { font-size: 1.35rem; }
+    .note-title { font-size: 1.2rem; }
+    .note-number { display: none; }
+}
+
+@media (max-width: 480px) {
+    .notes-header h1 { font-size: 1.9rem; }
+    .note-card { padding: 1rem 1rem 0.85rem; }
+}

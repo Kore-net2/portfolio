@@ -1,0 +1,166 @@
+/* ============================================
+   INDIVIDUAL NOTE PAGE
+   ============================================ */
+
+article {
+    max-width: 720px;
+    margin: 0 auto;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* ---- Header ---- */
+
+.note-header {
+    padding: 7rem 0 2rem;
+}
+
+.back-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--wine);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+    transform: translateX(-3px);
+}
+
+.note-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.note-meta .note-tag {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--wine-light);
+}
+
+.note-meta .note-date {
+    font-size: 0.85rem;
+    color: var(--gray);
+}
+
+.note-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: var(--wine);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+/* ---- Body ---- */
+
+.note-body {
+    padding-bottom: 3rem;
+}
+
+.note-body p {
+    font-size: 1.02rem;
+    color: var(--charcoal);
+    line-height: 1.85;
+    margin-bottom: 1.25rem;
+}
+
+.note-body a {
+    color: var(--wine);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(125, 30, 62, 0.3);
+    transition: text-decoration-color 0.2s ease;
+}
+
+.note-body a:hover {
+    text-decoration-color: var(--wine);
+}
+
+.note-body h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.65rem;
+    color: var(--wine);
+    font-weight: 600;
+    margin: 2.5rem 0 0.75rem;
+    letter-spacing: -0.3px;
+    opacity: 1;
+    transform: none;
+}
+
+.note-body h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin: 2rem 0 0.5rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.note-body strong {
+    font-weight: 600;
+    color: var(--charcoal);
+}
+
+.note-body code {
+    font-family: 'SF Mono', 'Fira Code', 'Fira Mono', Menlo, Consolas, monospace;
+    font-size: 0.88em;
+    background: rgba(125, 30, 62, 0.05);
+    color: var(--wine-dark);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+}
+
+.note-body pre {
+    margin: 1.25rem 0 1.5rem;
+    padding: 1.25rem 1.5rem;
+    background: rgba(42, 42, 42, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-left: 3px solid rgba(125, 30, 62, 0.15);
+    border-radius: 6px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.note-body pre code {
+    background: none;
+    color: var(--charcoal);
+    padding: 0;
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+.note-body ul,
+.note-body ol {
+    margin: 1rem 0 1.25rem 1.5rem;
+    color: var(--charcoal);
+}
+
+.note-body li {
+    font-size: 1.02rem;
+    line-height: 1.85;
+    margin-bottom: 0.4rem;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 768px) {
+    .note-header { padding: 8rem 0 1.5rem; }
+    .note-header h1 { font-size: 2rem; }
+    .note-body h2 { font-size: 1.45rem; }
+
+    .note-body pre {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .note-header { padding: 7rem 0 1.25rem; }
+    .note-header h1 { font-size: 1.7rem; }
+    .note-body p { font-size: 0.98rem; }
+    .note-body pre { padding: 0.85rem; }
+}

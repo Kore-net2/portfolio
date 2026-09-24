@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Notes | Your Name">
+    <meta property="og:url" content="https://yourusername.github.io/notes">
+    <meta property="og:type" content="website">
+    <title>Notes | Your Name</title>
+
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/notes.css">
+</head>
+<body>
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading</div>
+        </div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <nav>
+        <div class="nav-content">
+            <a href="/" class="nav-logo">Your Name</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/resume">Resume</a>
+                <a href="/projects">Projects</a>
+                <a href="/notes" class="active">Notes</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="notes-wrap">
+
+        <div class="notes-header">
+            <h1>Notes</h1>
+        </div>
+
+        <div class="notes-grid">
+
+            <!-- Featured note — spans 2 columns. Replace href and content with your own. -->
+            <a href="/notes/example-note" class="note-card featured">
+                <div class="note-top">
+                    <div class="note-header">
+                        <span class="note-tag">Guide</span>
+                        <span class="note-date">Month Year</span>
+                    </div>
+                    <h3 class="note-title">Your First Featured Note</h3>
+                </div>
+                <div class="note-bottom">
+                    <p class="note-preview">A short description of what this note covers. Keep it to one or two sentences — just enough to tell the reader what they'll find.</p>
+                    <span class="note-read">Read →</span>
+                </div>
+                <span class="note-number">01</span>
+            </a>
+
+            <!-- Regular note — square card -->
+            <a href="#" class="note-card">
+                <div class="note-top">
+                    <div class="note-header">
+                        <span class="note-tag">Category</span>
+                        <span class="note-date">Month Year</span>
+                    </div>
+                    <h3 class="note-title">A Second Note</h3>
+                </div>
+                <div class="note-bottom">
+                    <p class="note-preview">Short description here.</p>
+                    <span class="note-read">Read →</span>
+                </div>
+                <span class="note-number">02</span>
+            </a>
+
+            <!-- Regular note -->
+            <a href="#" class="note-card">
+                <div class="note-top">
+                    <div class="note-header">
+                        <span class="note-tag">Category</span>
+                        <span class="note-date">Month Year</span>
+                    </div>
+                    <h3 class="note-title">A Third Note</h3>
+                </div>
+                <div class="note-bottom">
+                    <p class="note-preview">Short description here.</p>
+                    <span class="note-read">Read →</span>
+                </div>
+                <span class="note-number">03</span>
+            </a>
+
+            <!-- Regular note — add a 4th to fill the grid row -->
+            <a href="#" class="note-card">
+                <div class="note-top">
+                    <div class="note-header">
+                        <span class="note-tag">Category</span>
+                        <span class="note-date">Month Year</span>
+                    </div>
+                    <h3 class="note-title">A Fourth Note</h3>
+                </div>
+                <div class="note-bottom">
+                    <p class="note-preview">Short description here.</p>
+                    <span class="note-read">Read →</span>
+                </div>
+                <span class="note-number">04</span>
+            </a>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Your Name</p>
+        </footer>
+
+    </div>
+
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/dark-mode.js"></script>
+</body>
+</html>

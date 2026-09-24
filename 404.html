@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Your Name</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/404.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="/" class="nav-logo">Your Name</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/resume">Resume</a>
+                <a href="/projects">Projects</a>
+                <a href="/notes">Notes</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="decoration"></div>
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1>Page Not Found</h1>
+            <p>The page you're looking for doesn't exist or may have been moved.</p>
+            <div class="buttons">
+                <a href="/" class="btn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 8L8 2L14 8M3 7V14H6V11H10V14H13V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Go Home
+                </a>
+                <button onclick="history.back()" class="btn btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 2L2 8L8 14M2 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Go Back
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
+</body>
+</html>
