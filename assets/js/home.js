@@ -3,13 +3,7 @@
    ============================================ */
 
 // Email link protection
-const user = "your.email";
-const domain = "yourdomain.com";
-const link = document.getElementById("email-link");
-
-if (link) {
-    link.href = "mailto:" + user + "@" + domain;
-}
+// (Email link is defined in index.html; no placeholder override needed.)
 
 // Subtle Parallax Effect (disabled on mobile)
 if (window.innerWidth > 768) {
