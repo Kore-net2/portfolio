@@ -18,7 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/home.css">
@@ -27,11 +27,11 @@
 <body>
     <nav>
         <div class="nav-content">
-            <a href="/portfolio/index.html" class="nav-logo">Nurali Galiev</a>
+            <a href="index.html" class="nav-logo">Nurali Galiev</a>
             <div class="nav-links">
-                <a href="/portfolio/index.html" class="active">Home</a>
-                <a href="/portfolio/resume/index.html">Resume</a>
-                <a href="/portfolio/projects/index.html">Projects</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="resume/index.html">Resume</a>
+                <a href="projects/index.html">Projects</a>
             </div>
         </div>
     </nav>
@@ -50,6 +50,7 @@
             <div class="hero-content">
 
                 <div class="hero-left">
+                    <span class="eyebrow">Computer Engineering · Software · Networks · Security</span>
                     <h1>Nurali Galiev</h1>
                     <p class="subtitle">Aktobe, Kazakhstan</p>
 
@@ -61,6 +62,11 @@
                         Through internships at the Department of Digital Technologies in Aktobe and KMG Kumkol in Astana, I've built a practical background in networking, enterprise systems and backend basics. Now I'm looking to apply it to software development and IT engineering projects.
                     </p>
 
+                    <div class="hero-actions">
+                        <a href="projects/index.html" class="cta-link">View projects</a>
+                        <a href="resume/index.html" class="cta-link secondary">Resume</a>
+                    </div>
+
                     <div class="contact-links">
                         <a href="mailto:nuraligaliev@outlook.com" id="email-link" aria-label="Email">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -68,8 +74,7 @@
                             </svg>
                             Email
                         </a>
-                        <noscript>Enable JavaScript to see email</noscript>
-
+                        
                         <a href="https://github.com/Kore-net2" target="_blank" aria-label="GitHub Profile">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
@@ -88,31 +93,49 @@
                 </div>
 
                 <div class="hero-right">
-    <img src="assets/images/personal/be_fine.jpeg" alt="Nurali Galiev" class="profile-photo">
+    <img src="assets/images/personal/be_fine.jpeg" alt="Personal profile illustration" class="profile-photo">
 </div>
 
             </div>
         </section>
 
-        <section class="quote-section" id="quoteSection">
-            <div class="quote-container" id="quoteContainer">
-                <div class="quote-wrapper" id="quoteWrapper">
-                    <div class="quote-item active">
-                        <div class="quote-mark-open">"</div>
-                        <p class="quote-text">Nothing in life is to be feared, it is only to be understood.</p>
-                        <p class="quote-author">Marie Curie</p>
-                    </div>
-                    <div class="quote-item">
-                        <div class="quote-mark-open">"</div>
-                        <p class="quote-text">Real change, enduring change, happens one step at a time.</p>
-                        <p class="quote-author">Ruth Bader Ginsburg</p>
-                    </div>
-                    <div class="quote-item">
-                        <div class="quote-mark-open">"</div>
-                        <p class="quote-text">Nothing works unless you do.</p>
-                        <p class="quote-author">Maya Angelou</p>
-                    </div>
+        <section class="home-section" id="certification">
+            <h2>Certification</h2>
+            <div class="cert-card">
+                <div>
+                    <div class="cert-org">Cisco Networking Academy</div>
+                    <div class="cert-name">Ethical Hacker</div>
+                    <div class="cert-meta">Certificate of Course Completion · Issued 13 September 2026</div>
                 </div>
+                <a href="assets/certificates/Cisco_NetAcad_Ethical_Hacker_2026.pdf" class="cta-link secondary" target="_blank" rel="noopener noreferrer">View certificate (PDF)</a>
+            </div>
+        </section>
+
+
+        <section class="home-section" id="featured-projects" aria-labelledby="featured-title">
+            <div class="home-section-heading">
+                <h2 id="featured-title">Selected projects</h2>
+                <a href="projects/index.html" class="all-projects-link">Explore all projects →</a>
+            </div>
+            <div class="featured-grid">
+                <a class="featured-card" href="https://github.com/Kore-net2/Yahtzee-Game-CSharp" target="_blank" rel="noopener noreferrer">
+                    <span class="featured-tech">C# · .NET 10 · Windows Forms</span>
+                    <strong>Yahtzee Game</strong>
+                    <span>Playable desktop game with computer opponents, SQLite and tests.</span>
+                    <span class="featured-action">View code ↗</span>
+                </a>
+                <a class="featured-card" href="https://github.com/Kore-net2/RaspberryPi-MasterMind" target="_blank" rel="noopener noreferrer">
+                    <span class="featured-tech">C · ARM · JavaScript</span>
+                    <strong>MasterMind PC Edition</strong>
+                    <span>Browser-based game and tested matching logic, adapted from a Raspberry Pi coursework prototype.</span>
+                    <span class="featured-action">View code ↗</span>
+                </a>
+                <a class="featured-card" href="https://github.com/Kore-net2/Multi-AS-BGP-Network" target="_blank" rel="noopener noreferrer">
+                    <span class="featured-tech">GNS3 · BGP · OSPF</span>
+                    <strong>Multi-AS Network Labs</strong>
+                    <span>GNS3 topologies and router configurations exploring routing and ACLs.</span>
+                    <span class="featured-action">View code ↗</span>
+                </a>
             </div>
         </section>
 
@@ -127,18 +150,5 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="assets/js/home.js"></script>
-    <script src="assets/js/quotes.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var qs = document.getElementById('quoteSection');
-            if (!qs) return;
-            var observer = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) { qs.classList.add('visible'); }
-                });
-            }, { threshold: 0.2 });
-            observer.observe(qs);
-        });
-    </script>
 </body>
 </html>

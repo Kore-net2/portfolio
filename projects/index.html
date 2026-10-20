@@ -15,7 +15,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/projects.css">
@@ -33,11 +33,11 @@
 
     <nav>
         <div class="nav-content">
-            <a href="/portfolio/index.html" class="nav-logo">Nurali Galiev</a>
+            <a href="../index.html" class="nav-logo">Nurali Galiev</a>
             <div class="nav-links">
-                <a href="/portfolio/index.html">Home</a>
-                <a href="/portfolio/resume/index.html">Resume</a>
-                <a href="/portfolio/projects/index.html" class="active">Projects</a>
+                <a href="../index.html">Home</a>
+                <a href="../resume/index.html">Resume</a>
+                <a href="../projects/index.html" class="active">Projects</a>
             </div>
         </div>
     </nav>
@@ -46,113 +46,198 @@
 
         <div class="proj-header">
             <h1>Projects</h1>
+            <p class="proj-intro">Seven public GitHub projects, additional university coursework, and one ongoing private research project. Source links are provided where available.</p>
         </div>
 
         <div class="proj-list">
 
-            <!-- Project 01: Multi-AS BGP & Hybrid Routing -->
-            <div class="proj-entry">
+            <article class="proj-entry">
                 <div class="proj-number">01</div>
                 <div class="proj-content">
-                    <div class="proj-date">Data Communications & Networks — HWU</div>
-                    <h3 class="proj-title">Multi-AS Enterprise Core & Inter-Domain BGP Routing</h3>
-                    <div class="proj-type">Enterprise Network Architecture & Security</div>
-                    <p class="proj-desc">Engineered a multi-domain Autonomous System (AS100 & AS200) environment in GNS3. Configured eBGP and BGPv6 peering across border routers, established dynamic redistribution with EIGRP/OSPFv3, and enforced security filtering using Cisco IOS Firewall IPv4 ACLs and packet capture validation in Wireshark.</p>
+                    <div class="proj-date">C# desktop application project</div>
+                    <h3 class="proj-title">Yahtzee — C# Windows Forms Game</h3>
+                    <div class="proj-type">Desktop Game Development</div>
+                    <span class="proj-status">Playable on Windows</span>
+                    <p class="proj-desc">A Windows Forms Yahtzee game built with C# and .NET 10. Features 1–4 players (including computer opponents), scoring across 13 categories, SQLite game history, save/load and xUnit test sources.</p>
+                    <p class="proj-note">The game was launched and confirmed working on Windows. Source includes an AI opponent with a rule-based strategy.</p>
                     <div class="proj-tags">
-                        <span class="tag">eBGP / BGPv6</span>
-                        <span class="tag">OSPFv3 & EIGRP</span>
-                        <span class="tag">Cisco IOS Firewall</span>
-                        <span class="tag">Wireshark</span>
-                        <span class="tag">GNS3</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET 10</span>
+                        <span class="tag">Windows Forms</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">xUnit</span>
                     </div>
                     <div class="proj-links">
-                        <a href="https://github.com/Kore-net2" class="proj-link" target="_blank">
-                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/>
-                            </svg>
-                            GitHub
-                        </a>
+                        <a href="https://github.com/Kore-net2/Yahtzee-Game-CSharp" class="proj-link" target="_blank" rel="noopener noreferrer" aria-label="View Yahtzee — C# Windows Forms Game source on GitHub"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg> GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- Project 02: Resilient Network Topologies & Dual-Stack -->
-            <div class="proj-entry">
+            <article class="proj-entry">
                 <div class="proj-number">02</div>
                 <div class="proj-content">
-                    <div class="proj-date">Data Communications & Networks — HWU</div>
-                    <h3 class="proj-title">Resilient Network Topologies & IPv4/IPv6 Dual-Stack</h3>
-                    <div class="proj-type">Network Infrastructure & Fault Tolerance</div>
-                    <p class="proj-desc">Designed and analyzed Star and Partial Mesh network topologies accommodating 30+ hosts across 10 subnets. Configured dynamic RIPv2/RIPng routing to prove single-point-of-failure vulnerabilities and automated failover/convergence during core link disruptions.</p>
+                    <div class="proj-date">Personal project</div>
+                    <h3 class="proj-title">Temperature Monitor System</h3>
+                    <div class="proj-type">C# / .NET Console Application</div>
+                    <span class="proj-status">Source available</span>
+                    <p class="proj-desc">A console utility that validates temperature inputs (−50 °C to +150 °C), reports count, minimum, maximum and mean, and classifies readings as Low / Normal / High using configurable thresholds. Includes MSTest unit tests.</p>
+                    <p class="proj-note">Accepts readings via command-line arguments; no physical temperature sensor is connected.</p>
                     <div class="proj-tags">
-                        <span class="tag">IPv4 / IPv6 Dual-Stack</span>
-                        <span class="tag">RIPv2 & RIPng</span>
-                        <span class="tag">Mesh Topology</span>
-                        <span class="tag">Fault Tolerance</span>
-                        <span class="tag">GNS3</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET 10</span>
+                        <span class="tag">MSTest</span>
+                        <span class="tag">CLI</span>
                     </div>
                     <div class="proj-links">
-                        <a href="https://github.com/Kore-net2" class="proj-link" target="_blank">
-                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/>
-                            </svg>
-                            GitHub
-                        </a>
+                        <a href="https://github.com/Kore-net2/TemperatureMonitor" class="proj-link" target="_blank" rel="noopener noreferrer" aria-label="View Temperature Monitor System source on GitHub"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg> GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- Project 03: MasterMind on Raspberry Pi -->
-            <div class="proj-entry">
+            <article class="proj-entry">
                 <div class="proj-number">03</div>
                 <div class="proj-content">
-                    <div class="proj-date">Coursework — Heriot-Watt</div>
-                    <h3 class="proj-title">MasterMind Game on Raspberry Pi 4</h3>
-                    <div class="proj-type">Systems Programming & Hardware Interfacing</div>
-                    <p class="proj-desc">Designed and implemented an interactive MasterMind code-breaking game using C and ARM Assembly on a Raspberry Pi 4. Built direct GPIO hardware integration for physical buttons, LEDs, and a 16x2 LCD display, featuring custom debouncing logic and optimized assembly subroutines for pattern matching.</p>
+                    <div class="proj-date">University team coursework + independently testable PC adaptation</div>
+                    <h3 class="proj-title">MasterMind — Raspberry Pi &amp; PC Edition</h3>
+                    <div class="proj-type">Embedded Systems &amp; Game Logic</div>
+                    <span class="proj-status">PC Edition playable</span>
+                    <p class="proj-desc">Original university team MasterMind prototype in C and ARM Assembly for Raspberry Pi GPIO, buttons, LEDs and an LCD. Added a standalone browser version playable on Windows and a portable C matching algorithm with automated tests.</p>
+                    <p class="proj-note">The Windows/browser scoring logic is tested. The original Raspberry Pi ARM/GPIO implementation still has known defects and has not been validated on hardware.</p>
                     <div class="proj-tags">
                         <span class="tag">C</span>
                         <span class="tag">ARM Assembly</span>
                         <span class="tag">Raspberry Pi</span>
-                        <span class="tag">GPIO / Hardware</span>
-                        <span class="tag">Embedded Systems</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">GPIO</span>
                     </div>
                     <div class="proj-links">
-                        <a href="https://github.com/Kore-net2" class="proj-link" target="_blank">
-                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/>
-                            </svg>
-                            GitHub
-                        </a>
+                        <a href="https://github.com/Kore-net2/RaspberryPi-MasterMind" class="proj-link" target="_blank" rel="noopener noreferrer" aria-label="View MasterMind — Raspberry Pi &amp; PC Edition source on GitHub"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg> GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- Project 04: AI Search & Automated Planning -->
-            <div class="proj-entry">
+            <article class="proj-entry">
                 <div class="proj-number">04</div>
                 <div class="proj-content">
-                    <div class="proj-date">Coursework — Heriot-Watt</div>
-                    <h3 class="proj-title">AI Search Algorithms & Automated Planning</h3>
-                    <div class="proj-type">Artificial Intelligence & Intelligent Agents</div>
-                    <p class="proj-desc">Developed a Constraint Satisfaction Problem (CSP) Sudoku solver using recursive backtracking with state pruning in Python. Additionally, modeled multi-agent lunar rover exploration missions in PDDL 2.1 using Fast-BFS planners, handling dynamic obstacle clearance and battery management constraints.</p>
+                    <div class="proj-date">University team AI coursework + enhanced implementation</div>
+                    <h3 class="proj-title">Python Sudoku Solver</h3>
+                    <div class="proj-type">Algorithms &amp; Constraint Satisfaction</div>
+                    <span class="proj-status">Source &amp; tests available</span>
+                    <p class="proj-desc">A Python Sudoku solver using recursive backtracking, constraint validation and the Minimum Remaining Values heuristic. Preserves the original university coursework code alongside an improved command-line solver and unittest suite.</p>
+                    <p class="proj-note">University group coursework origin is credited in the repository.</p>
                     <div class="proj-tags">
                         <span class="tag">Python</span>
-                        <span class="tag">Artificial Intelligence</span>
-                        <span class="tag">PDDL 2.1</span>
-                        <span class="tag">CSP / Backtracking</span>
-                        <span class="tag">Automated Planning</span>
+                        <span class="tag">Backtracking</span>
+                        <span class="tag">CSP</span>
+                        <span class="tag">MRV</span>
+                        <span class="tag">unittest</span>
                     </div>
                     <div class="proj-links">
-                        <a href="https://github.com/Kore-net2" class="proj-link" target="_blank">
-                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/>
-                            </svg>
-                            GitHub
-                        </a>
+                        <a href="https://github.com/Kore-net2/Python-Sudoku-Solver" class="proj-link" target="_blank" rel="noopener noreferrer" aria-label="View Python Sudoku Solver source on GitHub"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg> GitHub</a>
                     </div>
                 </div>
-            </div>
+            </article>
+
+            <article class="proj-entry">
+                <div class="proj-number">05</div>
+                <div class="proj-content">
+                    <div class="proj-date">Data Communications &amp; Networks — Heriot-Watt coursework</div>
+                    <h3 class="proj-title">Multi-AS Routing — BGP, OSPF &amp; ACLs</h3>
+                    <div class="proj-type">Network Engineering &amp; Security</div>
+                    <span class="proj-status">GNS3 source available</span>
+                    <p class="proj-desc">Two GNS3 coursework laboratories (Lab 6 and Lab 7) with configured autonomous systems, BGP peering, EIGRP, OSPF/OSPFv3, IPv4/IPv6 routing and IPv4 access control lists. Includes topology definitions and router/host configuration files.</p>
+                    <p class="proj-note">No Cisco IOS images are distributed; routing, convergence and ACL behavior have not been re-tested in the simulator for this publication.</p>
+                    <div class="proj-tags">
+                        <span class="tag">GNS3</span>
+                        <span class="tag">BGP</span>
+                        <span class="tag">EIGRP</span>
+                        <span class="tag">OSPFv3</span>
+                        <span class="tag">Cisco IOS ACL</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://github.com/Kore-net2/Multi-AS-BGP-Network" class="proj-link" target="_blank" rel="noopener noreferrer" aria-label="View Multi-AS Routing — BGP, OSPF &amp; ACLs source on GitHub"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg> GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="proj-entry">
+                <div class="proj-number">06</div>
+                <div class="proj-content">
+                    <div class="proj-date">Data Communications &amp; Networks — Heriot-Watt coursework</div>
+                    <h3 class="proj-title">Network Topologies — IPv4 / IPv6</h3>
+                    <div class="proj-type">Network Architecture &amp; Resilience</div>
+                    <span class="proj-status">GNS3 source available</span>
+                    <p class="proj-desc">GNS3 coursework topology exploring star and mesh arrangements, dual-stack IPv4/IPv6 addressing and RIPv2/RIPng routing. Includes the original 51-node simulation layout and device startup configurations.</p>
+                    <p class="proj-note">Topology files and configs are published; runtime connectivity and failover tests still require a compatible local GNS3 environment.</p>
+                    <div class="proj-tags">
+                        <span class="tag">GNS3</span>
+                        <span class="tag">IPv4 / IPv6</span>
+                        <span class="tag">RIPv2</span>
+                        <span class="tag">RIPng</span>
+                        <span class="tag">Star / Mesh</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://github.com/Kore-net2/Network-Topologies-GNS3" class="proj-link" target="_blank" rel="noopener noreferrer" aria-label="View Network Topologies — IPv4 / IPv6 source on GitHub"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg> GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="proj-entry">
+                <div class="proj-number">07</div>
+                <div class="proj-content">
+                    <div class="proj-date">Personal project</div>
+                    <h3 class="proj-title">Personal Portfolio Website</h3>
+                    <div class="proj-type">Responsive Web Development</div>
+                    <span class="proj-status">Live on GitHub Pages</span>
+                    <p class="proj-desc">This multi-page portfolio brings together project repositories, a resume, certification and selected technical work. Built with HTML, CSS and JavaScript, including responsive layouts and dark/light theme switching.</p>
+                    <div class="proj-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">GitHub Pages</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://github.com/Kore-net2/portfolio" class="proj-link" target="_blank" rel="noopener noreferrer" aria-label="View Personal Portfolio Website source on GitHub"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg> GitHub</a>
+                        <a href="https://kore-net2.github.io/portfolio/index.html" class="proj-link secondary" target="_blank" rel="noopener noreferrer">Live site</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="proj-entry">
+                <div class="proj-number">08</div>
+                <div class="proj-content">
+                    <div class="proj-date">University AI planning coursework</div>
+                    <h3 class="proj-title">Lunar Rover — Automated Planning</h3>
+                    <div class="proj-type">Artificial Intelligence &amp; Planning</div>
+                    <span class="proj-status">Coursework summary</span>
+                    <p class="proj-desc">Coursework in PDDL-based automated planning for a simulated lunar rover mission, exploring action preconditions, resource constraints and mission goals.</p>
+                    <p class="proj-note">The PDDL source is not currently published in a standalone GitHub repository.</p>
+                    <div class="proj-tags">
+                        <span class="tag">PDDL</span>
+                        <span class="tag">Automated Planning</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Planning</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="proj-entry research">
+                <div class="proj-number">09</div>
+                <div class="proj-content">
+                    <div class="proj-date">Honours research — Heriot-Watt University</div>
+                    <h3 class="proj-title">On-Gateway IoT Botnet Detection</h3>
+                    <div class="proj-type">IoT &amp; Network Security Research</div>
+                    <span class="proj-status progress">Research in progress</span>
+                    <p class="proj-desc">An ongoing research project investigating lightweight IoT botnet detection at a gateway. The proposed approach compares an Isolation Forest anomaly detector with rule-based detection on Raspberry Pi–class hardware.</p>
+                    <p class="proj-note">Literature review and methodology planning only so far. No trained detector, completed experiments or measured detection results; research repository remains private.</p>
+                    <div class="proj-tags">
+                        <span class="tag">IoT Security</span>
+                        <span class="tag">Raspberry Pi (proposed)</span>
+                        <span class="tag">Isolation Forest (proposed)</span>
+                        <span class="tag">Research</span>
+                    </div>
+                </div>
+            </article>
 
         </div>
 
